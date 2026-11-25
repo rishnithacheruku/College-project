@@ -1,0 +1,5 @@
+STAN 3D Inference Results
+=========================
+Test AUC: 0.863385
+Test F1: 0.686996
+Test AP: 0.659499

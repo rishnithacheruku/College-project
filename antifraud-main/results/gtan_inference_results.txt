@@ -1,0 +1,4 @@
+GTAN Inference Results
+AUC: 0.804241
+F1: 0.735732
+AP: 0.623051

@@ -1,0 +1,5 @@
+STAGN Inference Results
+AUC: 0.798717
+F1: 0.499737
+AP: 0.521715
+Evaluated transactions: 17786

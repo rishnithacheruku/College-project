@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fraud Detection (FD) - a unified research framework for financial fraud detection.">
+  <title>Fraud Detection (FD) | Financial Fraud Detection</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home"><span class="brand-mark">FD</span><span>Fraud Detection</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation">☰</button>
+    <nav id="mainNav">
+      <a href="#home">Home</a><a href="#overview">Overview</a><a href="#dashboard">Dashboard</a>
+      <a href="#models">Models</a><a href="#performance">Performance</a><a href="#demo">Live Demo</a><a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">FINANCIAL SECURITY • MACHINE LEARNING • GRAPH LEARNING</p>
+        <h1>Intelligent <span>Financial Fraud</span> Detection</h1>
+        <p class="hero-lead">A unified research framework exploring deep-learning and graph-based methods to identify suspicious financial activity.</p>
+        <div class="hero-actions"><a class="btn primary" href="#dashboard">Explore dashboard</a><a class="btn secondary" href="#performance">View model results</a></div>
+        <div class="hero-note"><span class="pulse"></span> Research project showcase · Five selected models</div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="shield"><span>✓</span></div>
+        <div class="float-card card-top"><small>MODEL FRAMEWORK</small><strong>5 Models</strong></div>
+        <div class="float-card card-bottom"><small>INFERENCE METRICS</small><strong>AUC · F1 · AP</strong></div>
+      </div>
+    </section>
+
+    <section class="section" id="overview">
+      <div class="section-heading"><p class="eyebrow">01 / PROJECT OVERVIEW</p><h2>Understanding the project</h2><p>A research-oriented framework for financial fraud detection with unified data processing, training and evaluation pipelines.</p></div>
+      <div class="two-col">
+        <article class="panel"><h3>Project introduction</h3><p>Financial fraud detection aims to distinguish suspicious transactions from legitimate activity. This project brings together representative convolutional, spatio-temporal and graph-based approaches so their capabilities can be studied under a common research framework.</p></article>
+        <article class="panel"><h3>Project objectives</h3><ul class="check-list"><li>Study five selected fraud-detection methods.</li><li>Understand graph and temporal learning approaches.</li><li>Compare AUC, F1-score and Average Precision (AP).</li><li>Present inference metrics and benchmark results clearly.</li><li>Provide an easy-to-follow demonstration interface.</li></ul></article>
+      </div>
+      <div class="stat-grid three">
+        <div class="stat-card"><span class="stat-icon">▦</span><strong>5</strong><span>Selected models</span></div>
+        <div class="stat-card"><span class="stat-icon">◎</span><strong>3</strong><span>Benchmark datasets</span></div>
+        <div class="stat-card"><span class="stat-icon">3</span><strong>3</strong><span>Evaluation metrics</span></div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="dashboard">
+      <div class="section-heading"><p class="eyebrow">02 / DASHBOARD</p><h2>Fraud detection at a glance</h2><p>Summary of the five uploaded inference result files. These are evaluation-file figures, not live website predictions.</p></div>
+      <div class="metric-grid">
+        <div class="metric-card"><span>Models evaluated</span><strong>5</strong><small>MCNN · STAN · STAGN · GTAN · RGTAN</small></div>
+        <div class="metric-card"><span>Highest inference AUC</span><strong>0.8634</strong><small>STAN</small></div>
+        <div class="metric-card"><span>Highest inference F1</span><strong>0.7357</strong><small>GTAN</small></div>
+        <div class="metric-card"><span>Highest inference AP</span><strong>0.6595</strong><small>STAN</small></div>
+      </div>
+      <div class="two-col dashboard-lower">
+        <article class="panel"><div class="panel-title"><h3>Inference results snapshot</h3><span class="tag">Uploaded files</span></div><div class="mini-bars" id="dashboardBars"></div></article>
+        <article class="panel"><h3>Transaction counts reported</h3><div class="count-row"><span>MCNN evaluated</span><strong>5,929</strong></div><div class="count-row"><span>STAGN evaluated</span><strong>17,786</strong></div><div class="count-row"><span>RGTAN evaluated</span><strong>17,786</strong></div><div class="count-row"><span>RGTAN fraud transactions</span><strong>3,154</strong></div><div class="count-row"><span>RGTAN legitimate transactions</span><strong>14,632</strong></div><p class="muted tiny">Counts are shown only where they were present in the uploaded inference files.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="models">
+      <div class="section-heading"><p class="eyebrow">03 / SELECTED METHODS</p><h2>Five models in this project</h2><p>The following descriptions summarize the methods named in the project README.</p></div>
+      <div class="model-grid">
+        <article class="model-card"><span class="model-number">01</span><h3>MCNN</h3><p>Convolutional Neural Network approach for credit-card fraud detection. It learns useful patterns from transaction-related input representations.</p><span class="tag">Convolutional learning</span></article>
+        <article class="model-card"><span class="model-number">02</span><h3>STAN</h3><p>Spatio-temporal attention-based neural network for credit-card fraud detection, designed to consider spatial and temporal relationships.</p><span class="tag">Spatio-temporal attention</span></article>
+        <article class="model-card"><span class="model-number">03</span><h3>STAGN</h3><p>Graph neural network approach using spatial-temporal attention for fraud detection, capturing relationships among connected entities.</p><span class="tag">Graph neural network</span></article>
+        <article class="model-card"><span class="model-number">04</span><h3>GTAN</h3><p>Semi-supervised credit-card fraud detection using attribute-driven graph representation to learn from transaction attributes and graph structure.</p><span class="tag">Attribute-driven graph learning</span></article>
+        <article class="model-card"><span class="model-number">05</span><h3>RGTAN</h3><p>Risk-aware graph representation approach that extends attribute-driven fraud detection by incorporating risk-aware information.</p><span class="tag">Risk-aware graph learning</span></article>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="performance">
+      <div class="section-heading"><p class="eyebrow">04 / MODEL EVALUATION</p><h2>Performance and evaluation</h2><p>Benchmark values from the README and local inference values are kept separate because they are different result sources.</p></div>
+      <div class="panel table-panel">
+        <div class="panel-title"><div><h3>A. Published benchmark results</h3><p class="muted tiny">Values transcribed from the project README. “—” means not reported or not applicable.</p></div><span class="tag">README</span></div>
+        <div class="table-wrap"><table><thead><tr><th>Model</th><th>Dataset</th><th>AUC</th><th>F1</th><th>AP</th></tr></thead><tbody>
+          <tr><td>MCNN</td><td>S-FFSD</td><td>0.7129</td><td>0.6861</td><td>0.3309</td></tr>
+          <tr><td>STAN</td><td>S-FFSD</td><td>0.7446</td><td>0.6791</td><td>0.3395</td></tr>
+          <tr><td>STAGN</td><td>S-FFSD</td><td>0.7659</td><td>0.6852</td><td>0.3599</td></tr>
+          <tr><td>GTAN</td><td>YelpChi</td><td>0.9241</td><td>0.7988</td><td>0.7513</td></tr>
+          <tr><td>RGTAN</td><td>YelpChi</td><td>0.9498</td><td>0.8492</td><td>0.8241</td></tr>
+        </tbody></table></div>
+        <p class="notice">The first three models are reported on S-FFSD and GTAN/RGTAN on YelpChi in this selected comparison. Do not interpret this as a same-dataset head-to-head ranking.</p>
+      </div>
+      <div class="panel table-panel">
+        <div class="panel-title"><div><h3>B. Local inference results</h3><p class="muted tiny">Values read from the five uploaded inference result files. Dataset labels were not stated consistently in those files, so no dataset is inferred here.</p></div><span class="tag">Inference files</span></div>
+        <div class="table-wrap"><table><thead><tr><th>Model</th><th>AUC</th><th>F1</th><th>AP</th></tr></thead><tbody>
+          <tr><td>MCNN</td><td>0.830788</td><td>0.695988</td><td>0.523499</td></tr>
+          <tr><td>STAN</td><td>0.863385</td><td>0.686996</td><td>0.659499</td></tr>
+          <tr><td>STAGN</td><td>0.798717</td><td>0.499737</td><td>0.521715</td></tr>
+          <tr><td>GTAN</td><td>0.804241</td><td>0.735732</td><td>0.623051</td></tr>
+          <tr><td>RGTAN</td><td>0.691860</td><td>0.452312</td><td>0.356395</td></tr>
+        </tbody></table></div>
+      </div>
+      <div class="charts-grid">
+        <article class="panel chart-panel"><div class="panel-title"><h3>AUC comparison</h3><span class="tag">Inference</span></div><canvas id="aucChart" aria-label="AUC comparison graph"></canvas></article>
+        <article class="panel chart-panel"><div class="panel-title"><h3>F1-score comparison</h3><span class="tag">Inference</span></div><canvas id="f1Chart" aria-label="F1 score comparison graph"></canvas></article>
+        <article class="panel chart-panel chart-wide"><div class="panel-title"><h3>Average Precision comparison</h3><span class="tag">Inference</span></div><canvas id="apChart" aria-label="Average Precision comparison graph"></canvas></article>
+      </div>
+      <div class="two-col explanation">
+        <article class="panel"><h3>Explanation of results</h3><p>Among the uploaded inference files, STAN has the highest AUC (0.863385) and AP (0.659499). GTAN has the highest F1-score (0.735732). RGTAN has the lowest values across the three reported inference metrics in these files. These observations describe only the supplied inference outputs.</p></article>
+        <article class="panel"><h3>How to read the metrics</h3><ul class="check-list"><li><b>AUC:</b> measures ranking/discrimination performance across thresholds.</li><li><b>F1-score:</b> balances precision and recall.</li><li><b>AP:</b> summarizes precision-recall performance.</li></ul><p class="muted tiny">Metric definitions are general explanations; the numeric results above come from your files.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="demo">
+      <div class="section-heading"><p class="eyebrow">05 / LIVE DEMONSTRATION</p><h2>Transaction input interface</h2><p>Use this form to demonstrate the type of information a transaction screening interface can collect.</p></div>
+      <div class="demo-layout">
+        <form class="panel demo-form" id="transactionForm">
+          <label>Transaction amount (₹)<input type="number" id="amount" min="0" step="0.01" placeholder="e.g. 2500" required></label>
+          <label>Transaction type<select id="type"><option>Purchase</option><option>Transfer</option><option>Cash withdrawal</option><option>Payment</option></select></label>
+          <label>Source account / sender<input id="source" type="text" placeholder="e.g. S1024" required></label>
+          <label>Destination / receiver<input id="target" type="text" placeholder="e.g. T2048" required></label>
+          <label>Transaction location<input id="location" type="text" placeholder="e.g. Chennai"></label>
+          <button class="btn primary full" type="submit">Run demonstration</button>
+          <p class="muted tiny">Demonstration interface only. A trained Python model/backend is not connected to this static GitHub Pages website.</p>
+        </form>
+        <div class="panel prediction-panel" id="predictionPanel"><div class="prediction-icon">⌁</div><span class="tag">DEMO OUTPUT</span><h3>Awaiting transaction</h3><p>Enter sample details and select “Run demonstration”. The page will confirm that the input was captured; it will not claim a real fraud prediction.</p><div class="prediction-placeholder">No live model connected</div></div>
+      </div>
+      <article class="panel guide"><h3>Live demonstration guide</h3><ol><li>Open the website and introduce the project objective.</li><li>Explain the five selected models and their learning approaches.</li><li>Show the benchmark table and explain that it comes from the README.</li><li>Show the separate inference table and three metric graphs.</li><li>Use the transaction form to demonstrate the interface workflow.</li><li>For a genuine prediction, run the Python project with its required environment and connect the model through a backend API.</li></ol></article>
+    </section>
+
+    <section class="section alt-section" id="about">
+      <div class="section-heading"><p class="eyebrow">06 / ABOUT</p><h2>About this project</h2><p>Research framework for studying financial fraud detection methods.</p></div>
+      <div class="two-col">
+        <article class="panel"><h3>Datasets in the research framework</h3><p><b>YelpChi, Amazon and S-FFSD</b> are identified in the README as datasets used for model experiments. The benchmark results shown above retain the dataset labels stated in that README.</p></article>
+        <article class="panel"><h3>Technology stack</h3><div class="tech-pills"><span>Python</span><span>PyTorch</span><span>scikit-learn</span><span>pandas</span><span>NumPy</span><span>NetworkX</span><span>DGL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+      </div>
+      <article class="panel conclusion"><h3>Project conclusion</h3><p>This project provides a common research framework for exploring multiple approaches to financial fraud detection. The README benchmark values and local inference values offer two distinct views of model performance. In the supplied inference files, STAN leads in AUC and AP, while GTAN leads in F1-score. A fair model selection should also consider dataset, evaluation setup, class imbalance and the intended application.</p></article>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#home"><span class="brand-mark">FD</span><span>Fraud Detection</span></a><p>Academic project showcase · Financial fraud detection research</p><a href="#home">Back to top ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>

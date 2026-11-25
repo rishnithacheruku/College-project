@@ -1,0 +1,5 @@
+MCNN Inference Results
+AUC: 0.830788
+F1: 0.695988
+AP: 0.523499
+Evaluated transactions: 5929

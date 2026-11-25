@@ -1,0 +1,7 @@
+RGTAN INFERENCE RESULTS
+Evaluated transactions: 17786
+Fraud transactions: 3154
+Legitimate transactions: 14632
+Test AUC: 0.691860
+Test F1: 0.452312
+Test AP: 0.356395
